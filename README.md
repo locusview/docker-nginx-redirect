@@ -2,9 +2,11 @@
 
 A very simple container to redirect HTTP traffic to another server, based on `nginx`
 
+Forked from https://github.com/schmunk42/docker-nginx-redirect
+
 ## Resources
 
-- [Docker Hub](https://hub.docker.com/r/schmunk42/nginx-redirect/)
+- [Docker Hub](https://hub.docker.com/r/nortecview/nginx-redirect/)
 
 ## Configuration
 
@@ -44,9 +46,9 @@ With `docker-compose`
     
 With `docker`    
 
-    docker run -e SERVER_REDIRECT=www.example.com -p 8888:80 schmunk42/nginx-redirect
-    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -p 8888:80 schmunk42/nginx-redirect
-    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -e SERVER_REDIRECT_SCHEME=https -p 8888:80 schmunk42/nginx-redirect
+    docker run -e SERVER_REDIRECT=www.example.com -p 8888:80 nortecview/nginx-redirect
+    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -p 8888:80 nortecview/nginx-redirect
+    docker run -e SERVER_REDIRECT=www.example.com -e SERVER_REDIRECT_PATH=/landingpage -e SERVER_REDIRECT_SCHEME=https -p 8888:80 nortecview/nginx-redirect
 
 ---
 
